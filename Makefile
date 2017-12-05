@@ -1,9 +1,9 @@
 CC=gcc
 
-all: level7
+all: vuln
 
-level7: level7.c
-	$(CC) -o level7 -m32 -ggdb -Wno-deprecated-declarations -Wno-overflow -fno-stack-protector level7.c -z execstack
+vuln: vuln.c
+	$(CC) -o vuln -m32 -ggdb -Wno-deprecated-declarations -Wno-overflow -fno-stack-protector vuln.c -z execstack
 
 clean:
-	rm level7
+	rm vuln
