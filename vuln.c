@@ -6,13 +6,13 @@
 char* getinput()
 {
   char buffer[64];
+  printf("%p\n", buffer);
 
   printf("> "); 
   fflush(stdout);
 
   gets(buffer); // overflow happens here
 
-  printf("%p\n", buffer);
 
   printf("got input: %s\n", buffer);
   return strdup(buffer);
