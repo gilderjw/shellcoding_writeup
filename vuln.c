@@ -13,8 +13,7 @@ char* getinput()
 
   gets(buffer); // overflow happens here
 
-
-  printf("got input: %s\n", buffer);
+  printf("\ngot input: %s\n", buffer);
   return strdup(buffer);
 }
 
