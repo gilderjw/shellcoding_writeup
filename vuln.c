@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-char* getinput()
+void getinput()
 {
   char buffer[64];
   printf("%p\n", buffer);
@@ -14,7 +14,6 @@ char* getinput()
   gets(buffer); // overflow happens here
 
   printf("\ngot input: %s\n", buffer);
-  return strdup(buffer);
 }
 
 int main(int argc, char **argv)
